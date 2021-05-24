@@ -1,8 +1,8 @@
  # Overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/overlay/common
+#DEVICE_PACKAGE_OVERLAYS += vendor/overlay/common
 
 # Allow overlays to be excluded from enforcing RRO
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/overlay/common
+#PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/overlay/common
 
 # Extra packages
 PRODUCT_PACKAGES += \
@@ -17,8 +17,7 @@ PRODUCT_PACKAGES += \
     PrimaryFlameOverlay \
     PrimaryNatureOverlay \
     PrimaryOceanOverlay \
-    PrimarySolarizedOverlay \
-#    EmptyOverlay \
+    PrimarySolarizedOverlay
 
 # Accents
 include vendor/overlay/accents.mk
@@ -41,7 +40,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/overlay/dictionaries
 include vendor/overlay/navbar.mk
 
 # Plugins
-include packages/apps/Plugins/plugins.mk
+#include packages/apps/Plugins/plugins.mk
 
 # Sounds
 include vendor/overlay/sounds.mk
